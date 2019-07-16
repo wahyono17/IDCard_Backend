@@ -14,7 +14,8 @@ class Employee extends REST_Controller{
         
         $nomor = $_GET;
         if(empty($nomor)){
-            $nomor = $nomor;
+            //$nomor = $nomor;
+            $nomor = null;
         }else{
             $nomor = $nomor['id'];
         }   
@@ -34,7 +35,7 @@ class Employee extends REST_Controller{
         }    
     
     }
-
+    
     public function index_delete(){
         $this->load->model('Employee_model');
         $Employee_id = $this->delete('Employee_id');
@@ -109,5 +110,6 @@ class Employee extends REST_Controller{
                 'status' => false,'message' => 'update data fail'
             ], REST_Controller::HTTP_BAD_REQUEST); 
     }
+    
 }
 ?>

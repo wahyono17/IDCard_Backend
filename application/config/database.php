@@ -75,11 +75,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'IT3-BRA-PC',
-	'username' => 'sa',
+	'hostname' => 'localhost',
+	'username' => 'root',
 	'password' => '',
-	'database' => 'IdCard2019',
-	'dbdriver' => 'sqlsrv',
+	'database' => 'idcard',
+	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
