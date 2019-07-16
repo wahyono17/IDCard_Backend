@@ -11,7 +11,7 @@ require APPPATH . 'libraries/Format.php';
 class Employee extends REST_Controller{
 
     public function index_get(){
-        
+        //filter dengan nama id jika kosong maka akan di select 9 orang di model
         $nomor = $_GET;
         if(empty($nomor)){
             //$nomor = $nomor;
